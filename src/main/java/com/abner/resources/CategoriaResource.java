@@ -14,7 +14,7 @@ import com.abner.services.CategoriaService;
 @RequestMapping(value="/categorias")
 public class CategoriaResource {
 
-	@Autowired
+	@Autowired // instancia o service automaticamente
 	private CategoriaService service;
 	
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
